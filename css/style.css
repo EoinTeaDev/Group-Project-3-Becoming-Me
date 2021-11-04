@@ -180,12 +180,12 @@ input[type=text], select {
 }
 
 #heroContent {
-font-family: 'Lato', sans-serif;
-font-size: 1.3rem;
-color: white;
-width: 45%;
-padding-left: 9%;
-padding-top: 4rem;
+  font-family: 'Lato', sans-serif;
+  font-size: 1.3rem;
+  color: white;
+  width: 45%;
+  padding-left: 9%;
+  padding-top: 4rem;
 }
 
 #crisisSupportBar{
