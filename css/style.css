@@ -65,17 +65,8 @@ nav {
   align-content: center;
 }
 
-main {
-  display: grid;
-  grid-template-columns: 12;
-  margin: auto;
-  padding-left: 5rem;
-  padding-right: 5rem;
-  
-}
-
 #heroImg {
-  height: 75%;
+  height: 40rem;
   background-image: url("../assets/Hero_Image.png");
   background-color: grey;
   background-size: cover;
@@ -162,26 +153,31 @@ input[type=text], select {
 #chatBox {
   background: rgb(161,152,242);
   background: linear-gradient(0deg, rgba(161,152,242,1) 0%,  rgba(152,224,228,1) 100%);
-  /* height: 40%;
-  width: 30%; (these are the finished chatbox elements) */
   border-radius: 5rem;
   border-style: none;
-  height: 5rem;
-  width: 5rem;
+  height: 3rem;
+  width: 3rem;
   right: 1rem;
+  transition: 1.5s;
+  animation: chatBoxClose 1s forwards;
 }
 
 #chatBox:hover{
-  animation-name: chatBoxOpen;
-  animation-duration: 1.5s;
+  animation: chatBoxOpen 1s forwards;
 }
-
 
 @keyframes chatBoxOpen{
-  0% {height: 5rem; width: 5rem;}
-  60% {height: 5rem; width: 25%;}
-  100% {height: 45%; width: 25%; border-radius: 4rem;}
+  0% {height: 3rem; width: 3rem;}
+  60% {height: 3rem; width: 25%;}
+  100% {height: 45%; width: 25%; border-radius: 1.5rem;}
 }
+
+@keyframes chatBoxClose{
+  0% {height: 45%; width: 25%;}
+  40% {height: 3rem; width: 25%; border-radius: 1.5rem;}
+  100% {height: 3rem; width: 3rem; border-radius: 5rem;}
+}
+
 
 #heroTitle {
   font-family: 'Bree Serif', sans-serif;
@@ -198,9 +194,10 @@ input[type=text], select {
   padding-right: 25%;
   text-align: center;
 }
+
 #heroContent {
 font-family: 'Lato', sans-serif;
-font-size: 1.2rem;
+font-size: 1.3rem;
 color: white;
 width: 45%;
 padding-left: 10%;
