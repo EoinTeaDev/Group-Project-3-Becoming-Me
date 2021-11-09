@@ -54,6 +54,7 @@ nav {
 
 .navHover:hover {
   color: #5CD7F2;
+  cursor: pointer;
 }
 
 .signUp {
@@ -109,11 +110,13 @@ nav {
 
 .signUpText:hover{
   color: #5CD7F2;
+  cursor: pointer;
 }
 
 .crisisSupport:hover {
   font-size: 1.1rem;
   font-weight: 900;
+  cursor: pointer;
 }
 
 #backgroundImage{
@@ -132,6 +135,7 @@ nav {
   height: 3rem;
   width: 3rem;
   right: 1rem;
+  z-index: 80;
   /* animation: chatBoxClose 1s forwards; */
 }
 
@@ -213,8 +217,12 @@ nav {
   width: 2rem;
   height: 2rem;
   margin: 0.5rem;
-  z-index: 20;
+  z-index: 100;
   border-style: hidden;
+}
+
+#chatBoxBubble:hover{
+  cursor: pointer;
 }
 
 #topics{
@@ -276,6 +284,7 @@ nav {
 
 #topicsLearnMore:hover{
   color: #5CD7F2;
+  cursor: pointer;
 }
 
 #mentalHealthTitle{
@@ -306,6 +315,7 @@ nav {
 
 #mentalHealthLearnMore:hover{
   color: #5CD7F2;
+  cursor: pointer;
 }
 
 #communityTitle{
@@ -444,6 +454,7 @@ nav {
 
 #discussionLearnMore:hover{
   color: #5CD7F2;
+  cursor: pointer;
 }
 
 #footer {
@@ -493,6 +504,7 @@ nav {
 
 #subscribeButton:hover{
   color: #5CD7F2;
+  cursor: pointer;
 }
 
 #bottomNav{
@@ -510,7 +522,8 @@ nav {
 }
 
 .siteMapContent{
-  width: 20%
+  width: 20%;
+  text-align: center;
 }
 .siteMapContent > h1{
   margin: 1rem;
@@ -525,26 +538,32 @@ nav {
 
 .siteMapContent > h1:hover{
   color: #5CD7F2;
+  cursor: pointer;
 }
 
 .siteMapContent > ul > li:hover{
   color: #5CD7F2;
+  cursor: pointer;
 }
 
 #siteMap{
   width: 100%;
 }
 
-
 #socials > div{
   margin-left: auto;
   margin-right: auto;
   width: 35%;
-  padding-left: 3rem;
+  padding-left: 5rem;
+  transform: scale(0.6);
 }
 
 #socials > div > img{
   margin: 0.5rem;
+}
+
+#socials > div > img:hover{
+  cursor: pointer;
 }
 
 #socials > p{
